@@ -143,6 +143,7 @@
 			<input type="hidden" name="utm_medium" id="utm_medium">
 			<input type="hidden" name="utm_campaign" id="utm_campaign">
 			<input type="hidden" name="utm_content" id="utm_content">
+			<input type="hidden" name="utm_id" id="utm_id">
                     <button type="submit" class="submit-btn" id="submit">Reserve My Seat</button>
                 </form>
             </div>
@@ -152,7 +153,6 @@
     <footer>
         <p>&copy; 2026 Vidhyaarjan Classes | A unit of Varshney Enterprises</p>
     </footer>
-
     <script>
         // Scroll Reveal Logic (from the original code)
         function reveal() {
@@ -197,8 +197,7 @@
     const urlParams = new URLSearchParams(window.location.search);
     
     // List of IDs you added to your HTML
-    const fields = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content'];
-    
+   const fields = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_id'];
     fields.forEach(field => {
       // If the URL has this UTM, put it in the hidden input
       if (urlParams.has(field)) {
