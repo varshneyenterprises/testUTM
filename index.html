@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vidhyaarjan Classes | Premium Coaching</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #1e3a8a;
+            --accent: #f59e0b;
+            --text-dark: #1f2937;
+            --text-light: #f9fafb;
+            --bg-soft: #f3f4f6;
+        }
+
+        * { box-sizing: border-box; }
+        body { margin: 0; font-family: 'Inter', sans-serif; color: var(--text-dark); line-height: 1.6; overflow-x: hidden; }
+
+        /* --- Scroll Reveal Animation --- */
+        .reveal { opacity: 0; transform: translateY(30px); transition: all 0.8s ease-out; }
+        .reveal.active { opacity: 1; transform: translateY(0); }
+
+        /* --- Hero --- */
+        .hero {
+            background: linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.8)), 
+                        url('https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&q=80&w=1500');
+            background-size: cover; background-position: center;
+            height: 80vh; display: flex; flex-direction: column; justify-content: center; align-items: center;
+            color: white; text-align: center; padding: 20px;
+        }
+
+        .hero h1 { font-family: 'Playfair Display', serif; font-size: clamp(2.5rem, 8vw, 4rem); margin: 0; }
+        .hero p { font-size: 1.2rem; margin: 20px 0; max-width: 600px; }
+
+        .cta-btn {
+            background: var(--accent); color: white; padding: 18px 35px;
+            text-decoration: none; border-radius: 50px; font-weight: bold;
+            transition: 0.3s; box-shadow: 0 4px 15px rgba(245, 158, 11, 0.4);
+        }
+        .cta-btn:hover { transform: scale(1.05); background: #d97706; }
+
+        /* --- Sections --- */
+        .section { padding: 80px 10%; max-width: 1200px; margin: auto; }
+        h2 { font-family: 'Playfair Display', serif; font-size: 2.5rem; text-align: center; margin-bottom: 40px; color: var(--primary); }
+
+        /* --- Grid & Cards --- */
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; }
+        .card { background: white; padding: 30px; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); text-align: center; }
+        
+        /* --- Testimonials --- */
+        .testimonial-card { font-style: italic; border-top: 3px solid var(--accent); }
+        .testimonial-card b { display: block; margin-top: 15px; font-style: normal; color: var(--primary); }
+
+        /* --- Contact Form --- */
+        .form-container { background: var(--bg-soft); padding: 40px; border-radius: 20px; max-width: 600px; margin: auto; }
+        .form-group { margin-bottom: 15px; text-align: left; }
+        input, select { width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 8px; font-size: 1rem; }
+        .submit-btn { width: 100%; background: var(--primary); color: white; border: none; padding: 15px; border-radius: 8px; cursor: pointer; font-weight: bold; font-size: 1rem; }
+
+        footer { background: #0f172a; color: #94a3b8; padding: 40px; text-align: center; margin-top: 50px; }
+    </style>
+</head>
+<body>
+
+    <header class="hero">
+        <h1 class="reveal">VIDHYAARJAN CLASSES</h1>
+        <p class="reveal">Mastering the foundation of learning since 2016.</p>
+        <a href="#enroll" class="cta-btn reveal">Start Your Journey</a>
+    </header>
+
+    <section class="section">
+        <div class="reveal">
+            <h2>Our Core Pillars</h2>
+            <div class="grid">
+                <div class="card"><h3>Desire</h3><p>Igniting the inner spark to learn and grow beyond boundaries.</p></div>
+                <div class="card"><h3>Logic</h3><p>Developing a rational mind that questions and understands the 'why'.</p></div>
+                <div class="card"><h3>Analysis</h3><p>Breaking down complex problems into simple, solvable steps.</p></div>
+            </div>
+        </div>
+    </section>
+
+   <section class="section" style="background: #f8fafc;">
+        <div class="reveal">
+            <h2>What Parents & Students Say</h2>
+            
+            <div style="text-align: center; margin-bottom: 40px;">
+                <div style="font-size: 2.2rem; color: #f59e0b; letter-spacing: 2px;">★★★★★</div>
+                <p style="margin: 5px 0 0; font-size: 1.1rem; font-weight: 800; color: var(--text-dark);">
+                    4.8 / 5.0 Rating
+                </p>
+                <p style="margin: 0; font-size: 0.9rem; color: #6b7280;">Based on 15 authentic Google Reviews</p>
+            </div>
+
+            <div class="grid">
+                <div class="card testimonial-card">
+                    <div style="color: #f59e0b; font-size: 1.2rem; margin-bottom: 10px;">★★★★★</div>
+                    "Excellent teaching methodology.. A lot of practice is done in classes and teachers clear doubts very nicely.. Best institute so far , 👍👍"
+                    <b>- Rahul Singh Jadon</b>
+                </div>
+                
+                <div class="card testimonial-card">
+                    <div style="color: #f59e0b; font-size: 1.2rem; margin-bottom: 10px;">★★★★★</div>
+                    "I liked the way Dushyant Sir teaches Mathematics. I observed a great transformation in me it was a great learning curve."
+                    <b>- Meenu Parjapat </b>
+                </div>
+
+                <div class="card testimonial-card">
+                    <div style="color: #f59e0b; font-size: 1.2rem; margin-bottom: 10px;">★★★★★</div>
+                    "Hi Sir you are the best teacher for math's. Calm Person. Best Teacher."
+                    <b>- Neil Suneja</b>
+                </div>
+
+                <div class="card testimonial-card">
+                    <div style="color: #f59e0b; font-size: 1.2rem; margin-bottom: 10px;">★★★★★</div>
+                    "The best tuition classes of the town. My daughter joined the classes in 10th standard and was very well taught..."
+                    <b>- Jayant Kumar Sharma</b>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <section id="enroll" class="section">
+        <div class="reveal">
+            <h2>Book a Free Demo Class</h2>
+            <div class="form-container">
+                <form id="demo-form" name="google-sheet">
+                    <div class="form-group">
+                        <input type="text" name="Name" placeholder="Student's Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" name="Phone" placeholder="Phone Number" required>
+                    </div>
+                    <div class="form-group">
+                        <select name="Class">
+                            <option value="">Select Class</option>
+                            <option value="Class 9-10">Class 9-10</option>
+                            <option value="Class 11-12 (PCM/PCB)">Class 11-12 (PCM/PCB)</option>
+                            <option value="Competitive Exams">Competitive Exams</option>
+                        </select>
+                    </div>
+			<input type="hidden" name="utm_source" id="utm_source">
+			<input type="hidden" name="utm_medium" id="utm_medium">
+			<input type="hidden" name="utm_campaign" id="utm_campaign">
+			<input type="hidden" name="utm_content" id="utm_content">
+                    <button type="submit" class="submit-btn" id="submit">Reserve My Seat</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Vidhyaarjan Classes | A unit of Varshney Enterprises</p>
+    </footer>
+
+    <script>
+        // Scroll Reveal Logic (from the original code)
+        function reveal() {
+            var reveals = document.querySelectorAll(".reveal");
+            for (var i = 0; i < reveals.length; i++) {
+                var windowHeight = window.innerHeight;
+                var elementTop = reveals[i].getBoundingClientRect().top;
+                var elementVisible = 150;
+                if (elementTop < windowHeight - elementVisible) {
+                    reveals[i].classList.add("active");
+                }
+            }
+        }
+        window.addEventListener("scroll", reveal);
+        reveal(); // Run on load
+
+        // Google Sheets Form Submission Logic
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxulA2cfbaKfIzJ1fbWY-2-ixNXiNczO-iO6y5jLpl2Bp3wCjGvs8tRGRt3TevDy9wn/exec'; // <--- PASTE YOUR URL HERE
+        const form = document.forms['google-sheet'];
+        const submitButton = document.getElementById('submit');
+
+        form.addEventListener('submit', e => {
+            e.preventDefault();
+            submitButton.innerText = "Sending...";
+            
+            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {
+                    alert("Success! We will contact you shortly.");
+                    form.reset();
+                    submitButton.innerText = "Reserve My Seat";
+                })
+                .catch(error => {
+                    console.error('Error!', error.message);
+                    alert("There was an error submitting the form. Please try again.");
+                    submitButton.innerText = "Reserve My Seat";
+                });
+        });
+    </script>
+<script>
+  window.addEventListener('load', function() {
+    // Look at the current URL for parameters
+    const urlParams = new URLSearchParams(window.location.search);
+    
+    // List of IDs you added to your HTML
+    const fields = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content'];
+    
+    fields.forEach(field => {
+      // If the URL has this UTM, put it in the hidden input
+      if (urlParams.has(field)) {
+        document.getElementById(field).value = urlParams.get(field);
+      }
+    });
+  });
+</script>
+</body>
+</html>
